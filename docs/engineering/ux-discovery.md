@@ -22,4 +22,4 @@ An internal change gets a proportionate applicability check; a reused pattern do
 
 ## Where it fits
 
-This shared guide supports the existing interview and [Wayfinder](https://github.com/rtellez91/mattpocock-skills-fork/blob/product-ux/docs/engineering/wayfinder.md). [Prototype](https://github.com/rtellez91/mattpocock-skills-fork/blob/product-ux/docs/engineering/prototype.md) uses its Product Design bridge; synthesis and implementation use its readiness assessment. [Ask Matt](https://github.com/rtellez91/mattpocock-skills-fork/blob/product-ux/docs/engineering/ask-matt.md) maps the full workflow.
+This shared guide supports the existing interview and [Wayfinder](https://github.com/rtellez91/mattpocock-skills-fork/blob/main/docs/engineering/wayfinder.md). [Prototype](https://github.com/rtellez91/mattpocock-skills-fork/blob/main/docs/engineering/prototype.md) uses its Product Design bridge; synthesis and implementation use its readiness assessment. [Ask Matt](https://github.com/rtellez91/mattpocock-skills-fork/blob/main/docs/engineering/ask-matt.md) maps the full workflow.

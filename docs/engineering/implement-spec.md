@@ -22,4 +22,4 @@ Independent work proceeds, design-dependent work waits on evidence, and prototyp
 
 ## Where it fits
 
-This orchestrates the tickets produced by [to-tickets](https://github.com/rtellez91/mattpocock-skills-fork/blob/product-ux/docs/engineering/to-tickets.md). [Implement](https://github.com/rtellez91/mattpocock-skills-fork/blob/product-ux/docs/engineering/implement.md) is the alternative when driving one ticket at a time. [Ask Matt](https://github.com/rtellez91/mattpocock-skills-fork/blob/product-ux/docs/engineering/ask-matt.md) maps the full workflow.
+This orchestrates the tickets produced by [to-tickets](https://github.com/rtellez91/mattpocock-skills-fork/blob/main/docs/engineering/to-tickets.md). [Implement](https://github.com/rtellez91/mattpocock-skills-fork/blob/main/docs/engineering/implement.md) is the alternative when driving one ticket at a time. [Ask Matt](https://github.com/rtellez91/mattpocock-skills-fork/blob/main/docs/engineering/ask-matt.md) maps the full workflow.

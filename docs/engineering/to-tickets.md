@@ -22,4 +22,4 @@ Tickets lead with purpose, result, and observable acceptance; design work is dis
 
 ## Where it fits
 
-This follows [to-spec](https://github.com/rtellez91/mattpocock-skills-fork/blob/product-ux/docs/engineering/to-spec.md) or another sufficiently established plan. [Implement](https://github.com/rtellez91/mattpocock-skills-fork/blob/product-ux/docs/engineering/implement.md) executes eligible slices while design work follows its human decision workflow. [Ask Matt](https://github.com/rtellez91/mattpocock-skills-fork/blob/product-ux/docs/engineering/ask-matt.md) maps the full workflow.
+This follows [to-spec](https://github.com/rtellez91/mattpocock-skills-fork/blob/main/docs/engineering/to-spec.md) or another sufficiently established plan. [Implement](https://github.com/rtellez91/mattpocock-skills-fork/blob/main/docs/engineering/implement.md) executes eligible slices while design work follows its human decision workflow. [Ask Matt](https://github.com/rtellez91/mattpocock-skills-fork/blob/main/docs/engineering/ask-matt.md) maps the full workflow.

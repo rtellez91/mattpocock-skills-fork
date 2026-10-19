@@ -22,4 +22,4 @@ The map exposes decisions and dependencies, prototype tickets record conclusions
 
 ## Where it fits
 
-This is a planning entry point for large uncertain efforts. Its settled decisions feed [to-spec](https://github.com/rtellez91/mattpocock-skills-fork/blob/product-ux/docs/engineering/to-spec.md); [prototype](https://github.com/rtellez91/mattpocock-skills-fork/blob/product-ux/docs/engineering/prototype.md) supplies concrete evidence when conversation alone cannot settle a question. [Ask Matt](https://github.com/rtellez91/mattpocock-skills-fork/blob/product-ux/docs/engineering/ask-matt.md) maps the full workflow.
+This is a planning entry point for large uncertain efforts. Its settled decisions feed [to-spec](https://github.com/rtellez91/mattpocock-skills-fork/blob/main/docs/engineering/to-spec.md); [prototype](https://github.com/rtellez91/mattpocock-skills-fork/blob/main/docs/engineering/prototype.md) supplies concrete evidence when conversation alone cannot settle a question. [Ask Matt](https://github.com/rtellez91/mattpocock-skills-fork/blob/main/docs/engineering/ask-matt.md) maps the full workflow.

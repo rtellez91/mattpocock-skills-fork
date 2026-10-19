@@ -22,4 +22,4 @@ The prototype answers its question, reuses product references, and reports exact
 
 ## Where it fits
 
-This is a standalone experiment or a detour within an interview. [UX discovery](https://github.com/rtellez91/mattpocock-skills-fork/blob/product-ux/docs/engineering/ux-discovery.md) frames the uncertainty, while [to-spec](https://github.com/rtellez91/mattpocock-skills-fork/blob/product-ux/docs/engineering/to-spec.md) carries accepted findings into implementation requirements. [Ask Matt](https://github.com/rtellez91/mattpocock-skills-fork/blob/product-ux/docs/engineering/ask-matt.md) maps the full workflow.
+This is a standalone experiment or a detour within an interview. [UX discovery](https://github.com/rtellez91/mattpocock-skills-fork/blob/main/docs/engineering/ux-discovery.md) frames the uncertainty, while [to-spec](https://github.com/rtellez91/mattpocock-skills-fork/blob/main/docs/engineering/to-spec.md) carries accepted findings into implementation requirements. [Ask Matt](https://github.com/rtellez91/mattpocock-skills-fork/blob/main/docs/engineering/ask-matt.md) maps the full workflow.

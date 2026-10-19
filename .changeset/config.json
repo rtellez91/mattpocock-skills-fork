@@ -14,7 +14,7 @@
   "fixed": [],
   "linked": [],
   "access": "restricted",
-  "baseBranch": "product-ux",
+  "baseBranch": "main",
   "updateInternalDependencies": "patch",
   "ignore": []
 }

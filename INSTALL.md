@@ -1,11 +1,11 @@
 # Local installation for this fork
 
-This fork keeps the original skill names. Use one active source per name. Its maintained branch is `product-ux`; `main` retains upstream history. Product Design is a separate plugin dependency for visual work, not bundled or installed by this package.
+This fork keeps the original skill names. Use one active source per name. Its stable maintained branch is `main`; the original project remains available through the `upstream` remote and Git history. Product Design is a separate plugin dependency for visual work, not bundled or installed by this package.
 
 The supported local route is Python 3.10+ and Git, without extra Python packages. Clone the maintained branch, preview the exact target changes, then apply them:
 
 ```powershell
-git clone --branch product-ux https://github.com/rtellez91/mattpocock-skills-fork.git
+git clone --branch main https://github.com/rtellez91/mattpocock-skills-fork.git
 Set-Location mattpocock-skills-fork
 python scripts/install_codex.py
 python scripts/install_codex.py --apply
@@ -26,7 +26,7 @@ Codex normally detects changed skills automatically; restart it if they do not a
 Review the fork's changes, then fast-forward your local checkout and reapply:
 
 ```powershell
-git pull --ff-only origin product-ux
+git pull --ff-only origin main
 python scripts/install_codex.py
 python scripts/install_codex.py --apply
 ```
@@ -35,8 +35,12 @@ Use this route for the fork's skills. `npx skills update` no longer owns the ent
 
 There is no backup or restore command. The original versions remain available in upstream Git history if you later choose to reinstall them.
 
+## Maintaining this fork
+
+Develop changes on task branches and open pull requests into this fork's `main`. Merge only after review and relevant validation; update installations from `main` after the merge. The inherited release workflow targets pushes to `main` and uses Changesets to propose version updates or tag versions when GitHub Actions is enabled.
+
 ## Maintainer updates from upstream
 
-Fetch `upstream`, inspect changes since `fork.json`'s recorded base, and merge normally into the maintained branch when ready. Preserve history. Resolve semantic changes in the interview, invocation, publication, and readiness contracts; do not just accept text merges. Recheck Product Design's installed contract separately. Run the repository checks and behavioral scenarios before publishing an update; then advance the recorded upstream base. Updates are deliberate, not automatic.
+If the checkout has no `upstream` remote, add it once with `git remote add upstream https://github.com/mattpocock/skills.git`. Fetch `upstream`, inspect changes since `fork.json`'s recorded base, and merge normally into the maintained branch when ready. Preserve history. Resolve semantic changes in the interview, invocation, publication, and readiness contracts; do not just accept text merges. Recheck Product Design's installed contract separately. Run the repository checks and behavioral scenarios before publishing an update; then advance the recorded upstream base. Updates are deliberate, not automatic.
 
 Sources: [Codex local skill discovery](https://learn.chatgpt.com/docs/build-skills#where-codex-loads-local-skills), [original Matt Pocock skills](https://github.com/mattpocock/skills).

@@ -22,4 +22,4 @@ The questions remain yours to answer, UX methods have a reason, and findings ret
 
 ## Where it fits
 
-This is the interview step before [to-spec](https://github.com/rtellez91/mattpocock-skills-fork/blob/product-ux/docs/engineering/to-spec.md), which synthesizes the resulting decisions. [Wayfinder](https://github.com/rtellez91/mattpocock-skills-fork/blob/product-ux/docs/engineering/wayfinder.md) handles a larger web of uncertainty. [Ask Matt](https://github.com/rtellez91/mattpocock-skills-fork/blob/product-ux/docs/engineering/ask-matt.md) maps the full workflow.
+This is the interview step before [to-spec](https://github.com/rtellez91/mattpocock-skills-fork/blob/main/docs/engineering/to-spec.md), which synthesizes the resulting decisions. [Wayfinder](https://github.com/rtellez91/mattpocock-skills-fork/blob/main/docs/engineering/wayfinder.md) handles a larger web of uncertainty. [Ask Matt](https://github.com/rtellez91/mattpocock-skills-fork/blob/main/docs/engineering/ask-matt.md) maps the full workflow.

@@ -18,4 +18,4 @@ The recommended route matches the uncertainty and scale, and technical work with
 
 ## Where it fits
 
-This is the router over the full workflow. Start with [grill-with-docs](https://github.com/rtellez91/mattpocock-skills-fork/blob/product-ux/docs/engineering/grill-with-docs.md) for a focused interview, or [Wayfinder](https://github.com/rtellez91/mattpocock-skills-fork/blob/product-ux/docs/engineering/wayfinder.md) when related decisions need a persistent map.
+This is the router over the full workflow. Start with [grill-with-docs](https://github.com/rtellez91/mattpocock-skills-fork/blob/main/docs/engineering/grill-with-docs.md) for a focused interview, or [Wayfinder](https://github.com/rtellez91/mattpocock-skills-fork/blob/main/docs/engineering/wayfinder.md) when related decisions need a persistent map.

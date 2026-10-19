@@ -22,4 +22,4 @@ The implementation reuses accepted resources, verifies relevant browser behavior
 
 ## Where it fits
 
-This is the per-ticket execution step after [to-tickets](https://github.com/rtellez91/mattpocock-skills-fork/blob/product-ux/docs/engineering/to-tickets.md). Use [implement-spec](https://github.com/rtellez91/mattpocock-skills-fork/blob/product-ux/docs/engineering/implement-spec.md) when you want orchestration across the whole eligible task graph. [Ask Matt](https://github.com/rtellez91/mattpocock-skills-fork/blob/product-ux/docs/engineering/ask-matt.md) maps the full workflow.
+This is the per-ticket execution step after [to-tickets](https://github.com/rtellez91/mattpocock-skills-fork/blob/main/docs/engineering/to-tickets.md). Use [implement-spec](https://github.com/rtellez91/mattpocock-skills-fork/blob/main/docs/engineering/implement-spec.md) when you want orchestration across the whole eligible task graph. [Ask Matt](https://github.com/rtellez91/mattpocock-skills-fork/blob/main/docs/engineering/ask-matt.md) maps the full workflow.

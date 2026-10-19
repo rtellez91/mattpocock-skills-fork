@@ -22,4 +22,4 @@ Product and engineering readers can find the outcome and acceptance scenarios; t
 
 ## Where it fits
 
-This is the synthesis step after [grill-with-docs](https://github.com/rtellez91/mattpocock-skills-fork/blob/product-ux/docs/engineering/grill-with-docs.md) or Wayfinder. [To tickets](https://github.com/rtellez91/mattpocock-skills-fork/blob/product-ux/docs/engineering/to-tickets.md) decomposes the resulting scope and retains its decision dependencies. [Ask Matt](https://github.com/rtellez91/mattpocock-skills-fork/blob/product-ux/docs/engineering/ask-matt.md) maps the full workflow.
+This is the synthesis step after [grill-with-docs](https://github.com/rtellez91/mattpocock-skills-fork/blob/main/docs/engineering/grill-with-docs.md) or Wayfinder. [To tickets](https://github.com/rtellez91/mattpocock-skills-fork/blob/main/docs/engineering/to-tickets.md) decomposes the resulting scope and retains its decision dependencies. [Ask Matt](https://github.com/rtellez91/mattpocock-skills-fork/blob/main/docs/engineering/ask-matt.md) maps the full workflow.

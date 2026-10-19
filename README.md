@@ -4,7 +4,7 @@ A maintained fork with UX discovery and Product Design integration.
 
 ## Installation
 
-This maintained fork uses the `product-ux` branch and keeps the original skill names. Follow [INSTALL.md](INSTALL.md) to replace the eight adapted skills, add `ux-discovery`, and update them without overwriting other upstream skills. No original backups are created. Product Design is a separate plugin used for visual work.
+This maintained fork uses the `main` branch and keeps the original skill names. Follow [INSTALL.md](INSTALL.md) to replace the eight adapted skills, add `ux-discovery`, and update them without overwriting other upstream skills. No original backups are created. Product Design is a separate plugin used for visual work.
 
 ## Product UX extension
 
