@@ -12,6 +12,10 @@ The destination varies per effort, and naming it is the first act of charting: i
 
 Wayfinder is **planning** by default: each ticket resolves a decision, and the map is done when the way is clear, with nothing left to decide before someone goes and does the thing. The pull to just do the work is usually the signal you've reached the edge of the map and it's time to hand off. An effort can override this in its **Notes**, carrying execution into the map itself, but absent that, produce decisions, not deliverables.
 
+For a product-experience destination, call the Skill tool with "ux-discovery" when charting the frontier and when resolving an experience decision. Use it within the existing interview and ticket types, not as another mandatory phase. Add this applicability to the map's Notes. The agent chooses methods and design timing; the human owns product tradeoffs and visual selection.
+
+Name the destination precisely. A requirements destination may explicitly defer detailed design and record what it gates. An implementation-ready destination cannot close while those in-scope design decisions remain pending. Reuse existing product resources, and assess each affected deliverable rather than requiring all product screens to be finished.
+
 ## Refer by name
 
 Every map and ticket is an issue, so it has a **name**: its title. In everything the human reads (narration, the map's Decisions-so-far), refer to it by that name, never by a bare id, number, or slug. A wall of `#42, #43, #44` is illegible; names read at a glance. The id and URL don't vanish; a name wraps its link, but they ride _inside_ the name, never stand in for it.
@@ -75,7 +79,7 @@ The answer isn't part of the body; it's recorded on resolution (see [Work throug
 Every ticket is either **HITL** (human in the loop, worked _with_ a human who speaks for themselves) or **AFK**, driven by the agent alone. A HITL ticket only resolves through that live exchange; the agent never stands in for the human's side of it (a grilling agent that answers its own questions has broken this).
 
 - **Research** (AFK): Reading documentation, third-party APIs, or local resources like knowledge bases to surface a fact a decision waits on. Resolved by a subagent that calls the Skill tool with "research". Use when knowledge outside the current working directory is required.
-- **Prototype** (HITL): Raise the fidelity of the discussion by making a cheap, rough, concrete artifact to react to (an outline, a rough take, a stub, or UI/logic code) by calling the Skill tool with "prototype". Links the prototype as an asset. Use when "how should it look" or "how should it behave" is the key question.
+- **Prototype** (HITL): Raise the fidelity of the discussion with a focused artifact by calling the Skill tool with "prototype". Its UI branch uses the Product Design plugin; its logic branch remains a small state/behavior experiment. State the question and sufficient fidelity first. Link the evidence and record the human's conclusion; producing a mock or a runnable page alone does not resolve the ticket. Use when "how should it look" or "how should it behave" is the key question.
 - **Grilling** (HITL): Conversation. The default case. Always call the Skill tool twice, for "grilling" and "domain-modeling".
 - **Task** (HITL or AFK): Manual work that must happen before a _decision_ can be made: nothing to decide, prototype, or research, but the discussion is blocked until it's done. Signing up for a service so its API can be judged, provisioning access, moving data so its shape can be seen. This is the one type that _does_ rather than decides, and it earns its place by unblocking a decision, not by delivering the destination. The agent drives it alone where it can (AFK); otherwise it hands the human a precise checklist (HITL). Resolved when the work is done; the answer records what was done and any resulting facts (credentials location, new URLs, row counts) later tickets depend on.
 

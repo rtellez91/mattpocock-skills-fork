@@ -8,7 +8,7 @@ Skills are organized into bucket folders under `skills/`:
 
 Every skill in `engineering/` or `productivity/` (the **promoted** buckets) must have a reference in the top-level `README.md` and an entry in `.claude-plugin/plugin.json`'s `skills` array (the Claude Code plugin ships exactly the promoted set). Skills in `misc/`, `in-progress/`, and `deprecated/` must not appear in either.
 
-Install commands are copied verbatim from [.agents/install-block.md](./.agents/install-block.md). `.claude-plugin/marketplace.json` is the repo's own marketplace. Every agent except Claude Code installs from it to get automatic updates, and Claude Code uses `claude-plugins-official`. Run `claude plugin validate . --strict` after touching either manifest. [ADR 0002](./.agents/adr/0002-ship-as-a-claude-code-plugin.md) records why.
+Installation for this fork follows [.agents/install-block.md](./.agents/install-block.md) and its canonical [INSTALL.md](./INSTALL.md). Use the scoped local installer for the nine adapted/new skills; the preserved full plugin manifest is not the supported overlay installation route. Run `claude plugin validate . --strict` after touching either manifest. [ADR 0002](./.agents/adr/0002-ship-as-a-claude-code-plugin.md) records the original upstream packaging decision.
 
 Each skill entry in the top-level `README.md` must link the skill name to its `SKILL.md`.
 
@@ -20,7 +20,7 @@ Every `SKILL.md` is either user-invoked (`disable-model-invocation: true` plus `
 
 [`ask-matt`](./skills/engineering/ask-matt/SKILL.md) is the router that maps every user-reachable skill and how they relate. The same trigger that re-syncs a docs page applies to it: whenever you add, rename, remove, or change how a user-reachable skill fits the flows, re-read `ask-matt`'s `SKILL.md` and update it so the map stays accurate: a new skill it never mentions, or a stale one it still routes to, is a router that lies.
 
-To (re)link every skill outside `deprecated/` and `misc/` into the local harness skill directories (`~/.claude/skills`, `~/.agents/skills`), run `scripts/link-skills.sh`. Each entry is a symlink into this repo, so a `git pull` keeps installed skills current; re-run the script after adding, removing, or renaming a skill.
+The inherited `scripts/link-skills.sh` links a broader set of skills and must not be used for the fork's scoped installation. Use `scripts/install_codex.py` instead. After changes, run `npm run check-fork`, `npm run test-installer`, and `npm run check-plugin-version`. Behavioral scenarios in `tests/ux-scenarios.md` complement packaging checks; they are not automated runtime verification.
 
 No em-dashes anywhere in this repo's prose (`SKILL.md` files, docs, `README.md`, `CHANGELOG.md`, ADRs, changesets, code comments). Where a sentence reaches for one, rewrite it instead with a comma, colon, period, parentheses, or a conjunction, whichever the sentence actually wants; never do a blind character substitution.
 

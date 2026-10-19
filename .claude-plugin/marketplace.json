@@ -1,15 +1,14 @@
 {
-  "name": "mattpocock",
+  "name": "mattpocock-skills-fork",
   "owner": {
-    "name": "Matt Pocock",
-    "url": "https://www.aihero.dev"
+    "name": "rtellez91"
   },
-  "description": "Matt Pocock's skills for real engineering, as an installable Claude Code plugin.",
+  "description": "A maintained fork of Matt Pocock skills with UX discovery and Product Design integration",
   "plugins": [
     {
-      "name": "mattpocock-skills",
+      "name": "mattpocock-skills-fork",
       "source": "./",
-      "description": "Matt Pocock's agent skills for real engineering (grilling, spec/ticket flows, TDD, code review, domain modelling and more).",
+      "description": "A maintained fork of Matt Pocock skills with UX discovery and Product Design integration",
       "category": "engineering",
       "keywords": [
         "engineering",
