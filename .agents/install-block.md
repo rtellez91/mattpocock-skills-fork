@@ -1,5 +1,7 @@
 # The canonical install block
 
+> Fork override: [INSTALL.md](../INSTALL.md) is the canonical procedure for this fork's scoped Codex installation. It replaces only adapted skills and adds `ux-discovery`. The original instructions below are preserved as upstream reference; do not use their upstream marketplace commands to install these adaptations. This override takes precedence over the upstream wording rules below.
+
 One install story, one wording. `README.md`, `.changeset/*`, and every page under `docs/` must say **this** and nothing else. Change it here first, then propagate.
 
 ## Managed installs first

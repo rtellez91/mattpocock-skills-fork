@@ -1,8 +1,10 @@
 ## What it does
 
-`implement-spec` takes a [spec](https://www.aihero.dev/ai-coding-dictionary/spec) and its [tickets](https://www.aihero.dev/ai-coding-dictionary/ticket) and lands the whole thing in one run. The orchestrating [agent](https://www.aihero.dev/ai-coding-dictionary/agent) hands each ticket to an implementer [subagent](https://www.aihero.dev/ai-coding-dictionary/subagent) working in its own git worktree, merges each finished branch into a single **integration branch**, runs [code-review](https://aihero.dev/skills-code-review) over the result, and resolves the tickets.
+`implement-spec` takes a [spec](https://www.aihero.dev/ai-coding-dictionary/spec) and its [tickets](https://www.aihero.dev/ai-coding-dictionary/ticket) and works eligible implementation tickets toward one integrated result. The orchestrating [agent](https://www.aihero.dev/ai-coding-dictionary/agent) hands each ticket to an implementer [subagent](https://www.aihero.dev/ai-coding-dictionary/subagent) working in its own git worktree, merges each finished branch into a single **integration branch**, runs [code-review](https://aihero.dev/skills-code-review) over the result, and resolves the tickets.
 
-It reads the tickets as a **task graph**, not a list. Blocking edges decide what can start, so at any moment there is a **frontier** of tickets whose blockers have all landed, and every ticket on the frontier runs at once. That is the difference from working the tickets one by one. The graph's shape sets the pace, not the tickets' order on the tracker.
+It reads the tickets as a **task graph**, not a list. Blocking edges decide what can start, so at any moment there is a **frontier** of implementation tickets whose blockers have all landed and whose design decisions are settled; eligible tickets can run in parallel. That is the difference from working the tickets one by one. The graph's shape sets the pace, not the tickets' order on the tracker.
+
+For experience-bearing work, [UX discovery](https://github.com/rtellez91/mattpocock-skills-fork/blob/main/docs/engineering/ux-discovery.md) assesses the current evidence before dispatch. A closed design issue or a readiness label alone is insufficient. Design and human-decision tickets are not assigned to implementers; if only those blockers remain, the run reports completed work and the exact pending questions, then returns control without declaring the spec complete.
 
 ## When to reach for it
 
@@ -18,7 +20,7 @@ You invoke this by typing `/implement-spec`, and the agent won't reach for it on
 ## Prerequisites
 
 - **An issue tracker.** The skill reads the tickets from, and resolves them on, the tracker [setup-matt-pocock-skills](https://aihero.dev/skills-setup-matt-pocock-skills) configured. If none has been configured, it stops and tells you to run that first rather than guessing.
-- **Tickets with blocking edges**, as [to-tickets](https://aihero.dev/skills-to-tickets) writes them. Without edges the graph is flat and every ticket starts at once.
+- **Tickets with blocking edges**, as [to-tickets](https://aihero.dev/skills-to-tickets) writes them. Without edges, independent implementation tickets appear runnable together; actual design readiness still gates dispatch.
 - **A [harness](https://www.aihero.dev/ai-coding-dictionary/harness) that runs subagents in the background and gives each one a git worktree.** The skill exists to run tickets at the same time, so on a harness that runs subagents one at a time, it is only a slower `implement`.
 
 ## The integration branch
@@ -70,10 +72,10 @@ A worktree holds only what git tracks. Tests that read gitignored fixtures, loca
 ## It's working if
 
 - Several implementers are running at once whenever the graph allows, not one after another.
-- A ticket starts as soon as its last blocker lands on the integration branch, not when the whole run ends.
+- An implementation ticket can start once its last blocker lands and its design evidence is sufficient, without waiting for the whole run to end.
 - Every ticket's trace shows `tdd` running, with a failing test before the code.
 - Merges into the integration branch are fast-forwards, not conflict resolutions.
-- The run ends on one branch with every ticket resolved, and a PR only if your tracker wanted one.
+- A completed run ends on one branch with every in-scope ticket resolved, and a PR only if your tracker wanted one. A design-blocked run reports the outstanding decisions instead.
 
 ## Where it fits
 

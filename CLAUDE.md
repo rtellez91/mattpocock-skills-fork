@@ -1,3 +1,5 @@
+For this fork's scoped Codex installation, follow [INSTALL.md](./INSTALL.md) and the fork override in [.agents/install-block.md](./.agents/install-block.md). Do not use the inherited full-plugin or `scripts/link-skills.sh` routes for that overlay. Keep upstream distribution identity and release configuration unchanged; the only plugin-manifest addition is registration of `ux-discovery`. Run `npm run check-fork`, `npm run test-installer`, and `npm run check-plugin-version` after changes. The remaining installation and distribution guidance below describes the upstream project.
+
 Skills are organized into bucket folders under `skills/`:
 
 - `engineering/`: daily code work

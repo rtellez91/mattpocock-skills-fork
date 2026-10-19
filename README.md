@@ -8,7 +8,11 @@
   </a>
 </p>
 
-# Skills For Real Engineers
+# Matt Pocock Skills Fork
+
+This fork adds [UX discovery](./skills/engineering/ux-discovery/SKILL.md) and integrates the separate Product Design plugin into visual prototyping. The original interview, skill names, and unrelated skills are preserved. Use [INSTALL.md](./INSTALL.md) for the scoped Codex installer, which replaces only the adapted skills without backups. The installation instructions below are retained as an upstream reference, not as installation instructions for this fork.
+
+The original project introduction and guidance follow.
 
 [![skills.sh](https://skills.sh/b/mattpocock/skills)](https://skills.sh/mattpocock/skills)
 
@@ -22,7 +26,7 @@ If you want to keep up with changes to these skills, and any new ones I create, 
 
 [Sign Up To The Newsletter](https://www.aihero.dev/s/skills-newsletter)
 
-## Installation (30-second setup)
+## Upstream installation (reference)
 
 A plugin updates itself. [skills.sh](https://skills.sh/mattpocock/skills) copies editable files into your project, and you update them by hand. Pick one per agent, because installing both gives you every skill twice.
 
@@ -230,7 +234,9 @@ Skills I use daily for code work.
 
 **Model-invoked**
 
-- **[prototype](./skills/engineering/prototype/SKILL.md)**: Build a throwaway prototype to answer a design question, either a single shareable HTML file for state/logic questions, or several radically different UI variations toggleable from one route.
+- **[ux-discovery](./skills/engineering/ux-discovery/SKILL.md)**: Choose UX methods and fidelity, reuse product resources, and assess design readiness within the existing workflow.
+
+- **[prototype](./skills/engineering/prototype/SKILL.md)**: Build a throwaway prototype to answer a design question, either a single shareable HTML file for state/logic questions, or visual exploration and interactive prototypes through the separate Product Design plugin.
 - **[diagnosing-bugs](./skills/engineering/diagnosing-bugs/SKILL.md)**: Disciplined diagnosis loop for hard bugs and performance regressions: build a feedback loop that goes red on this bug → minimise → hypothesise → instrument → fix → regression-test.
 - **[research](./skills/engineering/research/SKILL.md)**: Investigate a question against high-trust primary sources and capture the findings as a cited Markdown file in the repo, run as a background agent.
 - **[tdd](./skills/engineering/tdd/SKILL.md)**: Test-driven development with a red-green-refactor loop. Builds features or fixes bugs one vertical slice at a time.

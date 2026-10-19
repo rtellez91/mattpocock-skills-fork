@@ -1,0 +1,23 @@
+{
+  "name": "mattpocock-skills-fork",
+  "upstream": "https://github.com/mattpocock/skills.git",
+  "upstreamCommit": "5beb35b040e3de97e54fa9e386d7e42d15c295c2",
+  "repository": "https://github.com/rtellez91/mattpocock-skills-fork",
+  "branch": "main",
+  "skillNames": "unchanged",
+  "productDesign": "External product-design plugin; route by installed skill name, not cache path",
+  "productDesignContractReviewed": "0.1.56",
+  "adaptedSkills": [
+    "ask-matt",
+    "grill-with-docs",
+    "wayfinder",
+    "prototype",
+    "to-spec",
+    "to-tickets",
+    "implement",
+    "implement-spec"
+  ],
+  "addedSkills": [
+    "ux-discovery"
+  ]
+}
