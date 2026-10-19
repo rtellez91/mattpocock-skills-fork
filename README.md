@@ -1,20 +1,116 @@
+<p>
+  <a href="https://www.aihero.dev/s/skills-newsletter">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://res.cloudinary.com/total-typescript/image/upload/v1777382277/skills-repo-dark_2x.png">
+      <source media="(prefers-color-scheme: light)" srcset="https://res.cloudinary.com/total-typescript/image/upload/v1777382277/skill-repo-light_2x.png">
+      <img alt="Skills" src="https://res.cloudinary.com/total-typescript/image/upload/v1777382277/skill-repo-light_2x.png" width="369">
+    </picture>
+  </a>
+</p>
+
 # Matt Pocock Skills Fork
 
-A maintained fork with UX discovery and Product Design integration.
+This fork adds [UX discovery](./skills/engineering/ux-discovery/SKILL.md) and integrates the separate Product Design plugin into visual prototyping. The original interview, skill names, and unrelated skills are preserved. Use [INSTALL.md](./INSTALL.md) for the scoped Codex installer, which replaces only the adapted skills without backups. The installation instructions below are retained as an upstream reference, not as installation instructions for this fork.
 
-## Installation
+The original project introduction and guidance follow.
 
-This maintained fork uses the `main` branch and keeps the original skill names. Follow [INSTALL.md](INSTALL.md) to replace the eight adapted skills, add `ux-discovery`, and update them without overwriting other upstream skills. No original backups are created. Product Design is a separate plugin used for visual work.
+[![skills.sh](https://skills.sh/b/mattpocock/skills)](https://skills.sh/mattpocock/skills)
 
-## Product UX extension
+My agent skills that I use every day to do real engineering - not vibe coding.
 
-The interview and Wayfinder remain the entry points. [ux-discovery](skills/engineering/ux-discovery/SKILL.md) selects methods and fidelity for a concrete uncertainty, reuses current product resources, and assesses readiness per deliverable. [prototype](skills/engineering/prototype/SKILL.md) routes UI work through Product Design. Specs and tickets retain open decisions, and implementation dispatch respects those dependencies.
+Developing real applications is hard. Approaches like GSD, BMAD, and Spec-Kit try to help by owning the process. But while doing so, they take away your control and make bugs in the process hard to resolve.
 
-See [the workflow guide](docs/engineering/ux-discovery.md) and [validation scenarios](tests/ux-scenarios.md). The upstream base and adapted skills are recorded in [fork.json](fork.json). This is an independently maintained fork of [Matt Pocock's skills](https://github.com/mattpocock/skills); the original MIT license and attribution are preserved.
+These skills are designed to be small, easy to adapt, and composable. They work with any model. They're based on decades of engineering experience. Hack around with them. Make them your own. Enjoy.
+
+If you want to keep up with changes to these skills, and any new ones I create, you can join ~60,000 other devs on my newsletter:
+
+[Sign Up To The Newsletter](https://www.aihero.dev/s/skills-newsletter)
+
+## Upstream installation (reference)
+
+A plugin updates itself. [skills.sh](https://skills.sh/mattpocock/skills) copies editable files into your project, and you update them by hand. Pick one per agent, because installing both gives you every skill twice.
+
+### 1. Get the skills
+
+<details>
+<summary><strong>Claude Code</strong></summary>
+
+```bash
+claude plugin install mattpocock-skills@claude-plugins-official
+```
+
+Updates itself by default.
+
+</details>
+
+<details>
+<summary><strong>Codex</strong></summary>
+
+```bash
+codex plugin marketplace add mattpocock/skills
+codex plugin add mattpocock-skills@mattpocock
+```
+
+Updates itself at startup.
+
+</details>
+
+<details>
+<summary><strong>GitHub Copilot</strong> (CLI and VS Code)</summary>
+
+```bash
+copilot plugin marketplace add mattpocock/skills
+copilot plugin install mattpocock-skills@mattpocock
+```
+
+Then, once, add to `~/.copilot/settings.json`:
+
+```json
+{
+  "extraKnownMarketplaces": {
+    "mattpocock": { "source": { "source": "github", "repo": "mattpocock/skills" }, "autoUpdate": true }
+  }
+}
+```
+
+In VS Code, run **Chat: Install Plugin From Source** and enter `https://github.com/mattpocock/skills`. It updates daily.
+
+</details>
+
+<details>
+<summary><strong>Gemini CLI</strong> (manual updates)</summary>
+
+```bash
+gemini skills install https://github.com/mattpocock/skills.git --path skills/engineering
+gemini skills install https://github.com/mattpocock/skills.git --path skills/productivity
+```
+
+Re-run both commands to update.
+
+</details>
+
+<details>
+<summary><strong>Any other agent, or editable files</strong> (manual updates)</summary>
+
+```bash
+npx skills@latest add mattpocock/skills -a <agent>  # cursor, opencode, devin, windsurf, amp, pi; omit -a to choose
+```
+
+When the installer asks which skills to take, include `setup-matt-pocock-skills`. To update, run `npx skills@latest update`, and re-run `add` to pick up new skills.
+
+</details>
+
+### 2. Run `/setup-matt-pocock-skills`
+
+In your agent, run it once per repo. It will:
+
+- Ask you which issue tracker you want to use (GitHub, GitLab, local files, or anything else you describe)
+- Ask you what labels you apply to tickets when you triage them (`/triage` uses labels)
+- Ask you where you want to save any docs we create
+
+### 3. Bam - you're ready to go.
 
 ## Why These Skills Exist
-
-The following rationale is retained from Matt Pocock's upstream project, in his voice. The fork-specific changes are described above.
 
 I built these skills as a way to fix common failure modes I see with Claude Code, Codex, and other coding agents.
 
@@ -139,7 +235,8 @@ Skills I use daily for code work.
 **Model-invoked**
 
 - **[ux-discovery](./skills/engineering/ux-discovery/SKILL.md)**: Choose UX methods and fidelity, reuse product resources, and assess design readiness within the existing workflow.
-- **[prototype](./skills/engineering/prototype/SKILL.md)**: Answer a design question with a focused logic experiment, or visual exploration and interactive prototypes through the Product Design plugin.
+
+- **[prototype](./skills/engineering/prototype/SKILL.md)**: Build a throwaway prototype to answer a design question, either a single shareable HTML file for state/logic questions, or visual exploration and interactive prototypes through the separate Product Design plugin.
 - **[diagnosing-bugs](./skills/engineering/diagnosing-bugs/SKILL.md)**: Disciplined diagnosis loop for hard bugs and performance regressions: build a feedback loop that goes red on this bug → minimise → hypothesise → instrument → fix → regression-test.
 - **[research](./skills/engineering/research/SKILL.md)**: Investigate a question against high-trust primary sources and capture the findings as a cited Markdown file in the repo, run as a background agent.
 - **[tdd](./skills/engineering/tdd/SKILL.md)**: Test-driven development with a red-green-refactor loop. Builds features or fixes bugs one vertical slice at a time.

@@ -11,9 +11,10 @@ def validate():
     fork = json.loads((ROOT / "fork.json").read_text(encoding="utf-8"))
     plugin = json.loads((ROOT / ".claude-plugin/plugin.json").read_text(encoding="utf-8"))
     package = json.loads((ROOT / "package.json").read_text(encoding="utf-8"))
-    lock = json.loads((ROOT / "package-lock.json").read_text(encoding="utf-8"))
-    assert package["name"] == plugin["name"] == fork["name"] == lock["name"] == lock["packages"][""]["name"]
-    assert package["version"] == plugin["version"] == lock["version"] == lock["packages"][""]["version"]
+    # The overlay has its own ownership record; it does not rename or release the
+    # inherited package/plugin. The upstream npm lockfile remains untouched.
+    assert package["name"] == plugin["name"]
+    assert package["version"] == plugin["version"]
     promoted = {f"./{p.parent.relative_to(ROOT).as_posix()}"
                 for bucket in ("engineering", "productivity")
                 for p in (ROOT / "skills" / bucket).glob("*/SKILL.md")}

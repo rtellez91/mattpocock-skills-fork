@@ -37,7 +37,7 @@ There is no backup or restore command. The original versions remain available in
 
 ## Maintaining this fork
 
-Develop changes on task branches and open pull requests into this fork's `main`. Merge only after review and relevant validation; update installations from `main` after the merge. The inherited release workflow targets pushes to `main` and uses Changesets to propose version updates or tag versions when GitHub Actions is enabled.
+Develop changes on task branches and open pull requests into this fork's `main`. Merge only after review and relevant validation; update installations from `main` after the merge. The scoped installer does not depend on package releases or marketplace identity. Upstream package, marketplace, and release metadata remain unchanged.
 
 ## Maintainer updates from upstream
 
