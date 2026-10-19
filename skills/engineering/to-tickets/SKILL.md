@@ -64,6 +64,8 @@ Iterate until the user approves the breakdown.
 
 ### 5. Publish the tickets to the configured tracker
 
+Before publication, compare the complete ticket set against the source spec, plan, or conversation and its canonical decisions. Preserve every agreed technical decision in scope, including constraints, exact values and units, conditions, exceptions, and explicit prohibitions, in each ticket that depends on it or through a precise, accessible reference to the shared contract. Correct any omission, weakening, contradiction, or decision left without a responsible ticket during decomposition. If a source is missing or conflicting, identify the specific gap instead of inventing an answer or claiming complete coverage.
+
 Publish the approved tickets. **How** depends on the tracker `/setup-matt-pocock-skills` configured; the tickets are the same either way, only the shape of the blocking edges changes:
 
 - **Local files** → write one file per ticket under `.scratch/<feature-slug>/issues/<NN>-<slug>.md`, numbered from `01` in dependency order (blockers first). Each file's "Blocked by" lists the numbers/titles it depends on. Use the per-ticket file template below: one ticket per file, never a single combined file.

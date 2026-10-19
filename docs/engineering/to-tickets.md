@@ -36,6 +36,8 @@ Two things happen before anything is published. `to-tickets` looks for prefactor
 
 Tickets lead with purpose, the result, and observable acceptance criteria, followed by technical contracts. Design tickets specify the question, fixed constraints, resources to reuse, required human decisions, and evidence for a usable handoff. They are not assigned to implementation agents to invent product behavior.
 
+Before publication, the complete ticket set is checked against its source decisions: technical constraints, exact values, and conditions must remain available to every ticket that needs them, directly or through precise shared references, with no decision lost between slices.
+
 ## Blocking edges
 
 The edges are the point of the artifact. They work in two ways, depending on the tracker:

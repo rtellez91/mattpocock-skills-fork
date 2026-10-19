@@ -27,6 +27,8 @@ The spec exists because context windows end. You settled many things while [gril
 
 The spec does not invent product decisions. It records what you decided and assesses the existing evidence, in your project's own vocabulary, so a fresh session can pick up the work without you explaining it again. If the spec states something you never said, that is a defect.
 
+Before publication, it checks the completed spec against the source decisions so technical constraints, exact values, and conditions survive synthesis, directly or through precise canonical references; missing or conflicting sources remain explicit gaps.
+
 For experience-bearing work, [UX discovery](https://github.com/rtellez91/mattpocock-skills-fork/blob/main/docs/engineering/ux-discovery.md) assesses current evidence without starting research or design. The spec leads with outcomes, functional requirements, and observable acceptance scenarios for the whole team, then technical contracts. It records readiness per deliverable, exact references, and pending decisions with their effects.
 
 ## Seams before prose

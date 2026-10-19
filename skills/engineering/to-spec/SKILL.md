@@ -20,6 +20,8 @@ Check with the user that these seams match their expectations.
 
 4. Write the spec using the applicable sections below, then publish within the requested scope. A draft request stays a draft. Use configured tracker roles based on actual readiness; a parent spec is not automatically an executable `ready-for-agent` ticket. In particular, pending design decisions must not be hidden by that label. Lead with material the whole team can review; place implementation detail after observable requirements.
 
+Preserve every agreed technical decision in scope, including constraints, exact values and units, conditions, exceptions, and explicit prohibitions. Before publication, compare the completed spec against the source conversation and canonical decisions; correct any omission, weakening, or contradiction introduced by synthesis. A precise, accessible reference to a canonical contract can preserve a decision without duplicating it. If a source is missing or conflicting, identify the specific gap instead of inventing an answer or claiming complete coverage.
+
 <spec-template>
 
 ## Problem Statement
