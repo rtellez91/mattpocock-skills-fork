@@ -27,6 +27,8 @@ You commit all of it as markdown. There is no user-level or global mode. The con
 
 ## The three decisions
 
+For GitHub or GitLab, setup verifies that the repository is reachable through the matching CLI before continuing. If no remote points at that host, it asks for the repository URL and configures the remote first. Existing `CONTEXT.md` or `CONTEXT-MAP.md` files trigger an offer to move them to their `GLOSSARY` names and update the domain-doc pointers. The tracker templates also describe native blocking edges and safe issue comments, and direct issue creation to your own repository.
+
 It starts each section with the recommended answer, and skips any question its exploration already answered. Most runs need only two confirmations.
 
 | Decision | What it proposes | When it asks |

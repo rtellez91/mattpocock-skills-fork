@@ -33,6 +33,8 @@ It writes in two places. The report goes to `<tmpdir>/architecture-review-<times
 
 ## Depth, and the report that hunts for it
 
+The exploration subagent starts with a fresh context window so it can inspect the codebase independently.
+
 The skill rests on one idea: **depth**. A deep module puts a lot of behaviour behind a small, stable interface. A shallow module exposes its implementation through an interface nearly as wide as the code beneath it. The report looks for three forms of shallowness:
 
 - Pure functions extracted only for testability, while the real bugs are in how callers use them (no **locality**).
